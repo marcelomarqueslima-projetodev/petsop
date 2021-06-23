@@ -6,27 +6,26 @@
             <span class="uk-icon uk-margin-small-right" uk-icon="icon: icon-color-light; ratio: 0.15"></span>
           </a>
           <ul class="uk-navbar-nav">
-            <li><a>Produtos</a></li>
-            <li><a >Meus Pets</a></li>
-            <li><a >Consultas</a></li>
+            <li><a [routerLink]="['/']" routerLinkActive="uk-text-bold">Produtos</a></li>
+            <li><a [routerLink]="['/account/pets']" routerLinkActive="uk-text-bold">Meus Pets</a></li>
           </ul>
         </div>
         <div class="uk-navbar-right">
           <ul class="uk-navbar-nav">
             <li>
               <a >
-                <span class="uk-icon uk-margin-small-right" uk-icon="icon: cart"></span>
+                <span [routerLink]="['/cart']" class="uk-icon uk-margin-small-right" uk-icon="icon: cart"></span>
               </a>
             </li>
             <li>
               <a >
-                <span class="uk-icon uk-margin-small-right" uk-icon="icon: user"></span>
+                <span [routerLink]="['/signup']" class="uk-icon uk-margin-small-right" uk-icon="icon: user"></span>
                 
               </a>
             </li>
             <li>
               <a>
-                <span class="uk-icon uk-margin-small-right" uk-icon="icon: sign-out"></span>
+                <span [routerLink]="['/login']" class="uk-icon uk-margin-small-right" uk-icon="icon: sign-out"></span>
               </a>
             </li>
           </ul>
